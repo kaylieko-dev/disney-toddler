@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="매직킹덤">
+<title>매직킹덤 일정표</title>
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8IS0tIOuwsOqyvSAtLT4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjkwIiBmaWxsPSIjZTBmMmZlIi8+CgogIDwhLS0g7ZWY64qYIOq3uOudvOuNsOydtOyFmCAtLT4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ic2t5IiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNiYWU2ZmQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZTBmMmZlIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJjYXN0bGUiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y4ZmFmYyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMmVhZjQiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgoKICA8IS0tIOuzhCDsnqXsi50gLS0+CiAgPGNpcmNsZSBjeD0iOTAiIGN5PSI5MCIgcj0iOCIgZmlsbD0iI2ZkZTA0NyIgb3BhY2l0eT0iMC45Ii8+CiAgPGNpcmNsZSBjeD0iNDIwIiBjeT0iNzAiIHI9IjYiIGZpbGw9IiNmZGUwNDciIG9wYWNpdHk9IjAuOCIvPgogIDxjaXJjbGUgY3g9IjM3MCIgY3k9IjEyMCIgcj0iNCIgZmlsbD0iI2ZkZTA0NyIgb3BhY2l0eT0iMC43Ii8+CiAgPGNpcmNsZSBjeD0iMTMwIiBjeT0iMTQwIiByPSI0IiBmaWxsPSIjZmRlMDQ3IiBvcGFjaXR5PSIwLjYiLz4KCiAgPCEtLSDrtojqvYMgKOyEsSDsnIQpIC0tPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI5NSIgcng9IjE4IiByeT0iMjgiIGZpbGw9IiNmYmJmMjQiIG9wYWNpdHk9IjAuOSIvPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI4OCIgcng9IjEwIiByeT0iMTgiIGZpbGw9IiNmZWYwOGEiLz4KICA8ZWxsaXBzZSBjeD0iMjQwIiBjeT0iMTA4IiByeD0iMTAiIHJ5PSIxOCIgZmlsbD0iI2ZiOTIzYyIgb3BhY2l0eT0iMC44Ii8+CiAgPGVsbGlwc2UgY3g9IjI3MiIgY3k9IjEwOCIgcng9IjEwIiByeT0iMTgiIGZpbGw9IiNmYjkyM2MiIG9wYWNpdHk9IjAuOCIvPgoKICA8IS0tIOykkeyVmSDrqZTsnbgg7YOA7JuMIC0tPgogIDwhLS0g7LKo7YORIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iMjU2LDYwIDI0MiwxMzAgMjcwLDEzMCIgZmlsbD0iIzkzYzVmZCIvPgogIDxyZWN0IHg9IjI0MiIgeT0iMTMwIiB3aWR0aD0iMjgiIGhlaWdodD0iMTEwIiBmaWxsPSJ1cmwoI2Nhc3RsZSkiLz4KCiAgPCEtLSDsmbzsqr0g7J6R7J2AIO2DgOybjCAtLT4KICA8cG9seWdvbiBwb2ludHM9IjE3NSwxMjAgMTY0LDE3MCAxODYsMTcwIiBmaWxsPSIjOTNjNWZkIi8+CiAgPHJlY3QgeD0iMTY0IiB5PSIxNzAiIHdpZHRoPSIyMiIgaGVpZ2h0PSI4MCIgZmlsbD0idXJsKCNjYXN0bGUpIi8+CgogIDwhLS0g7Jik66W47Kq9IOyekeydgCDtg4Dsm4wgLS0+CiAgPHBvbHlnb24gcG9pbnRzPSIzMzcsMTIwIDMyNiwxNzAgMzQ4LDE3MCIgZmlsbD0iIzkzYzVmZCIvPgogIDxyZWN0IHg9IjMyNiIgeT0iMTcwIiB3aWR0aD0iMjIiIGhlaWdodD0iODAiIGZpbGw9InVybCgjY2FzdGxlKSIvPgoKICA8IS0tIOyZvOyqvSDsmbjqs70g7J6R7J2AIO2DgOybjCAtLT4KICA8cG9seWdvbiBwb2ludHM9IjEyMCwxNjAgMTEwLDIwMCAxMzAsMjAwIiBmaWxsPSIjYmFlNmZkIi8+CiAgPHJlY3QgeD0iMTEwIiB5PSIyMDAiIHdpZHRoPSIyMCIgaGVpZ2h0PSI2MCIgZmlsbD0idXJsKCNjYXN0bGUpIi8+CgogIDwhLS0g7Jik66W47Kq9IOyZuOqzvSDsnpHsnYAg7YOA7JuMIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iMzkyLDE2MCAzODIsMjAwIDQwMiwyMDAiIGZpbGw9IiNiYWU2ZmQiLz4KICA8cmVjdCB4PSIzODIiIHk9IjIwMCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjYwIiBmaWxsPSJ1cmwoI2Nhc3RsZSkiLz4KCiAgPCEtLSDshLHrsr0g7Jew6rKwIC0tPgogIDxyZWN0IHg9IjExMCIgeT0iMjQwIiB3aWR0aD0iMjkyIiBoZWlnaHQ9IjIwIiBmaWxsPSJ1cmwoI2Nhc3RsZSkiIHJ4PSIyIi8+CgogIDwhLS0g7ISxIOuzuOyytCAtLT4KICA8cmVjdCB4PSIxMzAiIHk9IjI1NSIgd2lkdGg9IjI1MiIgaGVpZ2h0PSIxNTAiIGZpbGw9InVybCgjY2FzdGxlKSIgcng9IjQiLz4KCiAgPCEtLSDshLHrrLgg7JWE7LmYIC0tPgogIDxwYXRoIGQ9Ik0yMjYsNDA1IEwyMjYsMzMwIFEyNTYsMzA1IDI4NiwzMzAgTDI4Niw0MDUgWiIgZmlsbD0iIzkzYzVmZCIgb3BhY2l0eT0iMC43Ii8+CgogIDwhLS0g7LC966y465OkIC0tPgogIDxyZWN0IHg9IjE2OCIgeT0iMjg1IiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgogIDxyZWN0IHg9IjIwNiIgeT0iMjg1IiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgogIDxyZWN0IHg9IjI4NiIgeT0iMjg1IiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgogIDxyZWN0IHg9IjMyNCIgeT0iMjg1IiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgoKICA8IS0tIOykkeyVmSDtg4Dsm4wg7LC966y4IC0tPgogIDxyZWN0IHg9IjI0NiIgeT0iMTUwIiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgogIDxyZWN0IHg9IjI0NiIgeT0iMTkyIiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgoKICA8IS0tIOyEsSDquLDri6ggLS0+CiAgPHJlY3QgeD0iMTEwIiB5PSI0MDAiIHdpZHRoPSIyOTIiIGhlaWdodD0iMjAiIGZpbGw9IiM5M2M1ZmQiIHJ4PSIzIiBvcGFjaXR5PSIwLjUiLz4KCiAgPCEtLSDrsJjsp53snbQg7J6l7IudIC0tPgogIDx0ZXh0IHg9Ijg4IiB5PSIyMDAiIGZvbnQtc2l6ZT0iMjgiIG9wYWNpdHk9IjAuOCI+4pymPC90ZXh0PgogIDx0ZXh0IHg9IjM5MCIgeT0iMTgwIiBmb250LXNpemU9IjIyIiBvcGFjaXR5PSIwLjciPuKcpjwvdGV4dD4KICA8dGV4dCB4PSIxNTAiIHk9IjExMCIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC42Ij7inKY8L3RleHQ+Cjwvc3ZnPg==">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8IS0tIOuwsOqyvSAtLT4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjkwIiBmaWxsPSIjZTBmMmZlIi8+CgogIDwhLS0g7ZWY64qYIOq3uOudvOuNsOydtOyFmCAtLT4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ic2t5IiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNiYWU2ZmQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZTBmMmZlIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJjYXN0bGUiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y4ZmFmYyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMmVhZjQiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgoKICA8IS0tIOuzhCDsnqXsi50gLS0+CiAgPGNpcmNsZSBjeD0iOTAiIGN5PSI5MCIgcj0iOCIgZmlsbD0iI2ZkZTA0NyIgb3BhY2l0eT0iMC45Ii8+CiAgPGNpcmNsZSBjeD0iNDIwIiBjeT0iNzAiIHI9IjYiIGZpbGw9IiNmZGUwNDciIG9wYWNpdHk9IjAuOCIvPgogIDxjaXJjbGUgY3g9IjM3MCIgY3k9IjEyMCIgcj0iNCIgZmlsbD0iI2ZkZTA0NyIgb3BhY2l0eT0iMC43Ii8+CiAgPGNpcmNsZSBjeD0iMTMwIiBjeT0iMTQwIiByPSI0IiBmaWxsPSIjZmRlMDQ3IiBvcGFjaXR5PSIwLjYiLz4KCiAgPCEtLSDrtojqvYMgKOyEsSDsnIQpIC0tPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI5NSIgcng9IjE4IiByeT0iMjgiIGZpbGw9IiNmYmJmMjQiIG9wYWNpdHk9IjAuOSIvPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI4OCIgcng9IjEwIiByeT0iMTgiIGZpbGw9IiNmZWYwOGEiLz4KICA8ZWxsaXBzZSBjeD0iMjQwIiBjeT0iMTA4IiByeD0iMTAiIHJ5PSIxOCIgZmlsbD0iI2ZiOTIzYyIgb3BhY2l0eT0iMC44Ii8+CiAgPGVsbGlwc2UgY3g9IjI3MiIgY3k9IjEwOCIgcng9IjEwIiByeT0iMTgiIGZpbGw9IiNmYjkyM2MiIG9wYWNpdHk9IjAuOCIvPgoKICA8IS0tIOykkeyVmSDrqZTsnbgg7YOA7JuMIC0tPgogIDwhLS0g7LKo7YORIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iMjU2LDYwIDI0MiwxMzAgMjcwLDEzMCIgZmlsbD0iIzkzYzVmZCIvPgogIDxyZWN0IHg9IjI0MiIgeT0iMTMwIiB3aWR0aD0iMjgiIGhlaWdodD0iMTEwIiBmaWxsPSJ1cmwoI2Nhc3RsZSkiLz4KCiAgPCEtLSDsmbzsqr0g7J6R7J2AIO2DgOybjCAtLT4KICA8cG9seWdvbiBwb2ludHM9IjE3NSwxMjAgMTY0LDE3MCAxODYsMTcwIiBmaWxsPSIjOTNjNWZkIi8+CiAgPHJlY3QgeD0iMTY0IiB5PSIxNzAiIHdpZHRoPSIyMiIgaGVpZ2h0PSI4MCIgZmlsbD0idXJsKCNjYXN0bGUpIi8+CgogIDwhLS0g7Jik66W47Kq9IOyekeydgCDtg4Dsm4wgLS0+CiAgPHBvbHlnb24gcG9pbnRzPSIzMzcsMTIwIDMyNiwxNzAgMzQ4LDE3MCIgZmlsbD0iIzkzYzVmZCIvPgogIDxyZWN0IHg9IjMyNiIgeT0iMTcwIiB3aWR0aD0iMjIiIGhlaWdodD0iODAiIGZpbGw9InVybCgjY2FzdGxlKSIvPgoKICA8IS0tIOyZvOyqvSDsmbjqs70g7J6R7J2AIO2DgOybjCAtLT4KICA8cG9seWdvbiBwb2ludHM9IjEyMCwxNjAgMTEwLDIwMCAxMzAsMjAwIiBmaWxsPSIjYmFlNmZkIi8+CiAgPHJlY3QgeD0iMTEwIiB5PSIyMDAiIHdpZHRoPSIyMCIgaGVpZ2h0PSI2MCIgZmlsbD0idXJsKCNjYXN0bGUpIi8+CgogIDwhLS0g7Jik66W47Kq9IOyZuOqzvSDsnpHsnYAg7YOA7JuMIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iMzkyLDE2MCAzODIsMjAwIDQwMiwyMDAiIGZpbGw9IiNiYWU2ZmQiLz4KICA8cmVjdCB4PSIzODIiIHk9IjIwMCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjYwIiBmaWxsPSJ1cmwoI2Nhc3RsZSkiLz4KCiAgPCEtLSDshLHrsr0g7Jew6rKwIC0tPgogIDxyZWN0IHg9IjExMCIgeT0iMjQwIiB3aWR0aD0iMjkyIiBoZWlnaHQ9IjIwIiBmaWxsPSJ1cmwoI2Nhc3RsZSkiIHJ4PSIyIi8+CgogIDwhLS0g7ISxIOuzuOyytCAtLT4KICA8cmVjdCB4PSIxMzAiIHk9IjI1NSIgd2lkdGg9IjI1MiIgaGVpZ2h0PSIxNTAiIGZpbGw9InVybCgjY2FzdGxlKSIgcng9IjQiLz4KCiAgPCEtLSDshLHrrLgg7JWE7LmYIC0tPgogIDxwYXRoIGQ9Ik0yMjYsNDA1IEwyMjYsMzMwIFEyNTYsMzA1IDI4NiwzMzAgTDI4Niw0MDUgWiIgZmlsbD0iIzkzYzVmZCIgb3BhY2l0eT0iMC43Ii8+CgogIDwhLS0g7LC966y465OkIC0tPgogIDxyZWN0IHg9IjE2OCIgeT0iMjg1IiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgogIDxyZWN0IHg9IjIwNiIgeT0iMjg1IiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgogIDxyZWN0IHg9IjI4NiIgeT0iMjg1IiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgogIDxyZWN0IHg9IjMyNCIgeT0iMjg1IiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgoKICA8IS0tIOykkeyVmSDtg4Dsm4wg7LC966y4IC0tPgogIDxyZWN0IHg9IjI0NiIgeT0iMTUwIiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgogIDxyZWN0IHg9IjI0NiIgeT0iMTkyIiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgoKICA8IS0tIOyEsSDquLDri6ggLS0+CiAgPHJlY3QgeD0iMTEwIiB5PSI0MDAiIHdpZHRoPSIyOTIiIGhlaWdodD0iMjAiIGZpbGw9IiM5M2M1ZmQiIHJ4PSIzIiBvcGFjaXR5PSIwLjUiLz4KCiAgPCEtLSDrsJjsp53snbQg7J6l7IudIC0tPgogIDx0ZXh0IHg9Ijg4IiB5PSIyMDAiIGZvbnQtc2l6ZT0iMjgiIG9wYWNpdHk9IjAuOCI+4pymPC90ZXh0PgogIDx0ZXh0IHg9IjM5MCIgeT0iMTgwIiBmb250LXNpemU9IjIyIiBvcGFjaXR5PSIwLjciPuKcpjwvdGV4dD4KICA8dGV4dCB4PSIxNTAiIHk9IjExMCIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC42Ij7inKY8L3RleHQ+Cjwvc3ZnPg==">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+  body{font-family:'Noto Sans KR',sans-serif;background:#f7fbff;padding-bottom:48px}
+  input,textarea{font-family:'Noto Sans KR',sans-serif}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+
+  #app{max-width:480px;margin:0 auto}
+
+  /* Header */
+  .header{background:#fff;border-bottom:2px solid #e3eef9;padding:20px 20px 16px}
+  .header-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:2px}
+  .h1{font-size:20px;font-weight:700;color:#1a2a3a;letter-spacing:-0.3px}
+  .weather-inline{display:flex;align-items:center;gap:5px;background:linear-gradient(135deg,#e0f2fe,#bae6fd);border-radius:10px;padding:6px 10px;min-width:90px;justify-content:center}
+  .weather-icon{font-size:20px;line-height:1}
+  .weather-info{display:flex;flex-direction:column;align-items:flex-start}
+  .weather-temp{font-size:14px;font-weight:700;color:#1e3a5f;line-height:1.2}
+  .weather-desc{font-size:10px;color:#5b9bd5;line-height:1.2}
+  .date{font-size:13px;color:#7a9ab8;margin-top:2px;margin-bottom:14px}
+  .progress-row{display:flex;align-items:center;gap:10px}
+  .progress-bar{flex:1;height:7px;background:#e3eef9;border-radius:99px;overflow:hidden}
+  .progress-fill{height:100%;background:linear-gradient(90deg,#f9d94e,#5b9bd5);border-radius:99px;transition:width .4s ease}
+  .progress-text{font-size:13px;font-weight:700;color:#5b9bd5;min-width:32px;text-align:right}
+
+  /* Info buttons */
+  .info-row{display:flex;gap:8px;padding:12px 16px 4px}
+  .info-btn{flex:1;padding:10px 4px;border:none;border-radius:12px;font-size:12px;font-weight:700;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.08);font-family:'Noto Sans KR',sans-serif}
+
+  /* Popup */
+  .popup{margin:6px 16px;border-radius:14px;border:1.5px solid;overflow:hidden;animation:fadeIn .2s ease;box-shadow:0 2px 12px rgba(0,0,0,.07)}
+  .popup-head{padding:11px 14px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(0,0,0,.06)}
+  .popup-title{font-size:14px;font-weight:700;color:#1a2a3a}
+  .popup-close{background:none;border:none;font-size:18px;cursor:pointer;color:#aaa;padding:2px 6px}
+  .popup-item{display:flex;gap:12px;padding:12px 14px;align-items:flex-start}
+  .popup-name{font-size:13px;font-weight:700;color:#1a2a3a;margin-bottom:3px}
+  .popup-desc{font-size:12px;color:#5a7a9a;line-height:1.6}
+
+  /* Cards */
+  .list{padding:10px 16px;display:flex;flex-direction:column;gap:8px}
+  .card{display:flex;align-items:center;gap:9px;background:#fff;border-radius:12px;padding:11px 12px;box-shadow:0 1px 4px rgba(0,0,0,.06);transition:opacity .3s}
+  .card.checked{opacity:.4}
+  .handle{color:#c5d8ee;font-size:20px;user-select:none;flex-shrink:0;touch-action:none;padding:6px 4px;cursor:grab;line-height:1}
+  .cb{width:24px;height:24px;border-radius:6px;border:1.5px solid #c5d8ee;cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .2s;background:#fff;font-size:13px;font-weight:700;color:#fff}
+  .cb.on{background:#5b9bd5;border-color:#5b9bd5}
+  .card-time{font-size:12px;font-weight:700;color:#5b9bd5;min-width:40px;flex-shrink:0}
+  .card-emoji{font-size:20px;flex-shrink:0}
+  .card-body{flex:1;min-width:0}
+  .title-row{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+  .card-title{font-size:14px;font-weight:700;color:#1a2a3a}
+  .card-title.done{text-decoration:line-through;color:#aaa}
+  .card-sub{font-size:11px;color:#8aaabf;margin-top:2px}
+  .warn-box{margin-top:4px;background:#fff8e1;border:1px solid #ffe082;border-radius:7px;padding:3px 8px;font-size:11px;color:#b45309;font-weight:700}
+  .ll-tag{background:#5b9bd5;color:#fff;font-size:10px;font-weight:700;border-radius:5px;padding:1px 6px;flex-shrink:0}
+  .num-badge{background:#fffde7;color:#92660a;font-size:10px;font-weight:700;border-radius:99px;padding:1px 6px;border:1px solid #f9e05a;flex-shrink:0}
+  .del-btn{background:none;border:none;font-size:16px;color:#c5d8ee;cursor:pointer;padding:2px 4px;flex-shrink:0}
+
+  /* Add */
+  .add-btn{display:block;margin:6px 16px 0;width:calc(100% - 32px);padding:12px;background:linear-gradient(135deg,#e0f2fe,#bae6fd);border:none;border-radius:12px;font-size:14px;font-weight:700;color:#1e3a5f;font-family:'Noto Sans KR',sans-serif;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+  .add-form{margin:6px 16px 0;background:#fff;border-radius:12px;padding:14px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+  .add-title{font-size:14px;font-weight:700;color:#1a2a3a;margin-bottom:10px}
+  .add-row{display:flex;gap:8px;margin-bottom:8px}
+  .inp{padding:9px 11px;border-radius:9px;border:1.5px solid #e8f0f7;font-size:13px;outline:none;background:#f7fbff;color:#1a2a3a;width:100%;margin-bottom:8px;font-family:'Noto Sans KR',sans-serif}
+  .inp-emoji{width:52px;text-align:center;margin-bottom:0}
+  .inp-time{flex:1;margin-bottom:0}
+  .btn-row{display:flex;gap:8px}
+  .add-ok{flex:1;padding:10px;background:linear-gradient(135deg,#93c5fd,#60a5fa);color:#fff;border:none;border-radius:9px;font-size:13px;font-weight:700;font-family:'Noto Sans KR',sans-serif;cursor:pointer}
+  .add-cancel{flex:1;padding:10px;background:linear-gradient(135deg,#f1f5f9,#e2e8f0);color:#7a9ab8;border:none;border-radius:9px;font-size:13px;font-family:'Noto Sans KR',sans-serif;cursor:pointer}
+
+  /* Stroller */
+  .stroller{margin:12px 16px 0;background:#fff;border:1.5px solid #e3eef9;border-radius:12px;padding:12px 14px}
+  .stroller-title{font-size:13px;font-weight:700;color:#5b9bd5;margin-bottom:7px}
+  .stroller-ta{width:100%;border-radius:8px;border:1.5px solid #ddeaf5;padding:9px 11px;font-size:13px;color:#1a2a3a;resize:none;outline:none;background:#f7fbff;line-height:1.6;font-family:'Noto Sans KR',sans-serif}
+  .footer{text-align:center;padding:20px 16px 0;color:#90c0e8;font-size:12px}
+
+  /* Quick links */
+  .quick-section{margin:12px 16px 0;background:#fff;border:1.5px solid #e3eef9;border-radius:12px;padding:12px 14px}
+  .quick-title{font-size:13px;font-weight:700;color:#5b9bd5;margin-bottom:8px}
+  .quick-row{display:flex;gap:8px}
+  .quick-btn{flex:1;padding:11px 6px;border:none;border-radius:10px;font-size:12px;font-weight:700;font-family:'Noto Sans KR',sans-serif;cursor:pointer;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:5px}
+  .quick-weather{background:linear-gradient(135deg,#bae6fd,#93c5fd);color:#1e3a5f}
+  .quick-map{background:linear-gradient(135deg,#bbf7d0,#86efac);color:#14532d}
+  .quick-map2{background:linear-gradient(135deg,#fef08a,#fde047);color:#854d0e}
+</style>
+</head>
+<body>
+<div id="app">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-top">
+      <div id="titleDisplay" class="h1" onclick="toggleTitleEdit()" style="cursor:pointer;display:inline-flex;align-items:center;gap:6px">
+      <span id="titleTxt">매직킹덤 일정표</span>
+      <span style="font-size:12px;color:#b0c8e0;font-weight:400">✏️</span>
+    </div>
+      <div class="weather-inline" id="weatherInline">
+        <div class="weather-icon" id="wiIcon">🌤</div>
+        <div class="weather-info">
+          <span class="weather-temp" id="wiTemp">--°F</span>
+          <span class="weather-desc" id="wiDesc">로딩중</span>
+        </div>
+      </div>
+    </div>
+    <div id="titleEdit" style="display:none;align-items:center;gap:6px;margin-bottom:6px">
+      <input id="titleInput" value="매직킹덤 일정표"
+        style="padding:7px 10px;border-radius:9px;border:1.5px solid #bae6fd;font-size:15px;font-weight:700;font-family:'Noto Sans KR',sans-serif;color:#1a2a3a;background:#f7fbff;outline:none;flex:1">
+      <button onclick="saveTitle()"
+        style="padding:7px 14px;background:linear-gradient(135deg,#93c5fd,#60a5fa);color:#fff;border:none;border-radius:9px;font-size:13px;font-weight:700;font-family:'Noto Sans KR',sans-serif;cursor:pointer">확인</button>
+    </div>
+    <div id="dateDisplay" class="date" onclick="toggleDateEdit()" style="cursor:pointer;display:inline-flex;align-items:center;gap:5px;margin-bottom:10px">
+      <span id="dateTxt">2026년 4월 4일</span>
+      <span style="font-size:11px;color:#b0c8e0">✏️</span>
+    </div>
+    <div id="dateEdit" style="display:none;align-items:center;gap:6px;margin-bottom:10px">
+      <input type="date" id="dateInput" value="2026-04-04"
+        style="padding:7px 10px;border-radius:9px;border:1.5px solid #bae6fd;font-size:13px;font-family:'Noto Sans KR',sans-serif;color:#1a2a3a;background:#f7fbff;outline:none">
+      <button onclick="saveDate()"
+        style="padding:7px 14px;background:linear-gradient(135deg,#93c5fd,#60a5fa);color:#fff;border:none;border-radius:9px;font-size:13px;font-weight:700;font-family:'Noto Sans KR',sans-serif;cursor:pointer">확인</button>
+    </div>
+    <div class="progress-row">
+      <div class="progress-bar"><div class="progress-fill" id="pFill" style="width:0%"></div></div>
+      <span class="progress-text" id="pText">0/11</span>
+    </div>
+  </div>
+
+  <!-- Info buttons -->
+  <div class="info-row">
+    <button class="info-btn" id="btn-restaurant"
+      style="background:linear-gradient(135deg,#fef08a,#fde047);color:#854d0e"
+      onclick="togglePopup('restaurant')">식당</button>
+    <button class="info-btn" id="btn-parade"
+      style="background:linear-gradient(135deg,#bae6fd,#93c5fd);color:#1e3a5f"
+      onclick="togglePopup('parade')">퍼레이드 명당</button>
+    <button class="info-btn" id="btn-fireworks"
+      style="background:linear-gradient(135deg,#bbf7d0,#86efac);color:#14532d"
+      onclick="togglePopup('fireworks')">불꽃놀이 명당</button>
+  </div>
+
+  <!-- Popups -->
+  <div id="popup-restaurant" class="popup" style="display:none;border-color:#f9e05a;background:#fffde7">
+    <div class="popup-head">
+      <span class="popup-title">🍴 추천 식당</span>
+      <button class="popup-close" onclick="togglePopup('restaurant')">✕</button>
+    </div>
+    <div class="popup-item">
+      <span style="font-size:24px;flex-shrink:0">🍝</span>
+      <div><div class="popup-name">피노키오 빌리지 하우스</div><div class="popup-desc">스몰월드 배가 보이는 창가석 강추! 미리 예약하면 최고의 뷰를 즐길 수 있어요.</div></div>
+    </div>
+    <div class="popup-item">
+      <span style="font-size:24px;flex-shrink:0">🤖</span>
+      <div><div class="popup-name">코스믹 레이 카페</div><div class="popup-desc">노래하는 로봇 공연이 있어 아이가 정말 좋아해요! 예약 없이도 입장 가능.</div></div>
+    </div>
+  </div>
+
+  <div id="popup-parade" class="popup" style="display:none;border-color:#90caf9;background:#e3f2fd">
+    <div class="popup-head">
+      <span class="popup-title">💃 퍼레이드 명당</span>
+      <button class="popup-close" onclick="togglePopup('parade')">✕</button>
+    </div>
+    <div class="popup-item">
+      <span style="font-size:24px;flex-shrink:0">📍</span>
+      <div><div class="popup-name">리버티 스퀘어 근처</div><div class="popup-desc">메인 스트리트보다 훨씬 한산해요! 시작 20분 전에 자리 잡으세요.</div></div>
+    </div>
+  </div>
+
+  <div id="popup-fireworks" class="popup" style="display:none;border-color:#a5d6a7;background:#e8f5e9">
+    <div class="popup-head">
+      <span class="popup-title">✨ 불꽃놀이 명당</span>
+      <button class="popup-close" onclick="togglePopup('fireworks')">✕</button>
+    </div>
+    <div class="popup-item">
+      <span style="font-size:24px;flex-shrink:0">🎇</span>
+      <div><div class="popup-name">케이시스 코너 근처</div><div class="popup-desc">성 전체 쇼가 한눈에! 97cm 아이는 성 바로 앞에선 어른 등에 가릴 수 있어요. 퇴장도 빠릅니다.</div></div>
+    </div>
+  </div>
+
+  <!-- Schedule -->
+  <div class="list" id="cardList"></div>
+
+  <!-- Add -->
+  <button class="add-btn" id="addBtn" onclick="showAdd()">＋ 일정 추가</button>
+  <div class="add-form" id="addForm" style="display:none">
+    <div class="add-title">새 일정 추가</div>
+    <div class="add-row">
+      <input class="inp inp-emoji" id="nEmoji" placeholder="😊" maxlength="2" value="⭐">
+      <input class="inp inp-time" id="nTime" placeholder="시간 (예: 13:00)">
+    </div>
+    <input class="inp" id="nTitle" placeholder="일정 이름">
+    <input class="inp" id="nSub" placeholder="메모 (선택)">
+    <div class="btn-row">
+      <button class="add-ok" onclick="addItem()">추가</button>
+      <button class="add-cancel" onclick="hideAdd()">취소</button>
+    </div>
+  </div>
+
+  <!-- Quick Links -->
+  <div class="quick-section">
+    <div class="quick-title">🔗 현장 바로가기</div>
+    <div class="quick-row">
+      <a class="quick-btn quick-weather"
+        href="https://www.weather.com/weather/today/l/28.3796,-81.5633"
+        target="_blank">🌤️ 올랜도 날씨</a>
+      <a class="quick-btn quick-map"
+        href="https://www.google.com/maps/search/restroom+near+Magic+Kingdom+Orlando/@28.4177,-81.5812,16z"
+        target="_blank">🚻 화장실 지도</a>
+      <a class="quick-btn quick-map2"
+        href="https://www.google.com/maps/place/Magic+Kingdom+Park/@28.4177,-81.5812,17z"
+        target="_blank">🗺️ 공원 지도</a>
+    </div>
+  </div>
+
+  <!-- Stroller -->
+  <div class="stroller">
+    <div class="stroller-title">🛒 유모차 주차 메모</div>
+    <textarea class="stroller-ta" rows="2" placeholder="예: 피터팬 입구 왼쪽 기둥 옆 🌿"></textarea>
+  </div>
+
+
+  <!-- 날씨 + 화장실 섹션 -->
+  <div style="margin:12px 16px 0;background:#fff;border-radius:12px;padding:14px;box-shadow:0 1px 4px rgba(0,0,0,.06)">
+    <div style="font-size:13px;font-weight:700;color:#5b9bd5;margin-bottom:10px">🚻 화장실 위치</div>
+    <div style="display:flex;gap:8px">
+      <!-- 화장실 -->
+      <div style="flex:1;background:linear-gradient(135deg,#f0fdf4,#bbf7d0);border-radius:10px;padding:12px;cursor:pointer" onclick="toggleToilet()">
+        <div style="text-align:center">
+          <div style="font-size:24px">🚻</div>
+          <div style="font-size:11px;color:#14532d;font-weight:700;margin-top:4px">화장실 위치</div>
+          <div style="font-size:10px;color:#16a34a;margin-top:2px">탭해서 보기</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 화장실 목록 (토글) -->
+    <div id="toiletList" style="display:none;margin-top:10px;animation:fadeIn .2s ease">
+      <div style="font-size:12px;font-weight:700;color:#14532d;margin-bottom:8px">🚻 매직킹덤 화장실 위치</div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <a href="https://maps.google.com/?q=Magic+Kingdom+Main+Street+Restroom" target="_blank" style="text-decoration:none">
+          <div style="background:#f0fdf4;border-radius:9px;padding:9px 12px;display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-size:13px;font-weight:700;color:#1a2a3a">메인 스트리트</div>
+              <div style="font-size:11px;color:#5a7a9a">성문 입구 옆 / 기차역 근처</div>
+            </div>
+            <span style="color:#16a34a;font-size:16px">→</span>
+          </div>
+        </a>
+        <a href="https://maps.google.com/?q=Magic+Kingdom+Adventureland+Restroom" target="_blank" style="text-decoration:none">
+          <div style="background:#f0fdf4;border-radius:9px;padding:9px 12px;display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-size:13px;font-weight:700;color:#1a2a3a">어드벤처랜드</div>
+              <div style="font-size:11px;color:#5a7a9a">정글 크루즈 근처</div>
+            </div>
+            <span style="color:#16a34a;font-size:16px">→</span>
+          </div>
+        </a>
+        <a href="https://maps.google.com/?q=Magic+Kingdom+Fantasyland+Restroom" target="_blank" style="text-decoration:none">
+          <div style="background:#f0fdf4;border-radius:9px;padding:9px 12px;display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-size:13px;font-weight:700;color:#1a2a3a">판타지랜드 ⭐</div>
+              <div style="font-size:11px;color:#5a7a9a">피터팬·덤보 근처 (아이와 자주 이용)</div>
+            </div>
+            <span style="color:#16a34a;font-size:16px">→</span>
+          </div>
+        </a>
+        <a href="https://maps.google.com/?q=Magic+Kingdom+Liberty+Square+Restroom" target="_blank" style="text-decoration:none">
+          <div style="background:#f0fdf4;border-radius:9px;padding:9px 12px;display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-size:13px;font-weight:700;color:#1a2a3a">리버티 스퀘어</div>
+              <div style="font-size:11px;color:#5a7a9a">퍼레이드 명당 근처</div>
+            </div>
+            <span style="color:#16a34a;font-size:16px">→</span>
+          </div>
+        </a>
+        <a href="https://maps.google.com/?q=Magic+Kingdom+Tomorrowland+Restroom" target="_blank" style="text-decoration:none">
+          <div style="background:#f0fdf4;border-radius:9px;padding:9px 12px;display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-size:13px;font-weight:700;color:#1a2a3a">투모로우랜드</div>
+              <div style="font-size:11px;color:#5a7a9a">버즈 라이트이어 근처</div>
+            </div>
+            <span style="color:#16a34a;font-size:16px">→</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">🐇 불가능한 건 없어요, 그저 아직 안 해본 것뿐!</div>
+</div>
+
+<script>
+let schedule = [
+  {id:1,  time:"08:10", emoji:"🚕", title:"리프트 미니밴 호출",        sub:"카시트 확인!",              tag:null, warn:null, num:null, checked:false},
+  {id:2,  time:"09:30", emoji:"🐘", title:"덤보",                     sub:"현장 대기",                 tag:null, warn:null, num:8,    checked:false},
+  {id:3,  time:"10:15", emoji:"🍯", title:"위니 더 푸",                sub:"현장 대기",                 tag:"LL", warn:"스캔 직후 버즈 16:30 예약!", num:2, checked:false},
+  {id:4,  time:"11:00", emoji:"🧚", title:"피터팬의 비행",              sub:"현장 대기",                 tag:"LL", warn:"스캔 직후 스몰월드 17:15 예약!", num:1, checked:false},
+  {id:5,  time:"12:00", emoji:"🍴", title:"점심 식사",                 sub:"피노키오 빌리지 하우스",      tag:null, warn:null, num:null, checked:false},
+  {id:6,  time:"13:15", emoji:"🧜", title:"인어공주",                  sub:"현장 대기",                 tag:null, warn:null, num:3,    checked:false},
+  {id:7,  time:"14:00", emoji:"🌹", title:"벨 체험",                   sub:"가스통 시나몬 롤 간식",      tag:"LL", warn:null, num:6,    checked:false},
+  {id:8,  time:"15:00", emoji:"💃", title:"메인 퍼레이드 관람",          sub:"명당 확인!",               tag:null, warn:null, num:null, checked:false},
+  {id:9,  time:"16:30", emoji:"🔫", title:"버즈 라이트이어",            sub:null,                      tag:"LL", warn:null, num:4,    checked:false},
+  {id:10, time:"17:15", emoji:"🎈", title:"이츠 어 스몰 월드",          sub:null,                      tag:"LL", warn:null, num:5,    checked:false},
+  {id:11, time:"20:00", emoji:"✨", title:"Happily Ever After 불꽃놀이", sub:"명당 확인!",              tag:null, warn:null, num:null, checked:false},
+];
+
+let openPopup = null;
+
+function render() {
+  const list = document.getElementById('cardList');
+  list.innerHTML = '';
+  schedule.forEach((item, index) => {
+    const card = document.createElement('div');
+    card.className = 'card' + (item.checked ? ' checked' : '');
+    card.dataset.ci = index;
+    card.style.borderLeft = item.tag ? '4px solid #5b9bd5' : '4px solid #f9d94e';
+
+    card.innerHTML = `
+      <span class="handle">⠿</span>
+      <button class="cb ${item.checked?'on':''}" onclick="toggleCheck(${item.id})">${item.checked?'✓':''}</button>
+      <span class="card-time">${item.time}</span>
+      <span class="card-emoji">${item.emoji}</span>
+      <div class="card-body">
+        <div class="title-row">
+          ${item.tag ? '<span class="ll-tag">LL</span>' : ''}
+          ${item.num ? `<span class="num-badge">${item.num}</span>` : ''}
+          <span class="card-title${item.checked?' done':''}">${item.title}</span>
+        </div>
+        ${item.sub ? `<div class="card-sub">${item.sub}</div>` : ''}
+        ${item.warn ? `<div class="warn-box">⚠️ ${item.warn}</div>` : ''}
+      </div>
+      <button class="del-btn" onclick="deleteItem(${item.id})">✕</button>
+    `;
+
+    // ── 드래그 (핸들에만) ──
+    const handle = card.querySelector('.handle');
+    const drag = { active: false, fromIdx: null };
+
+    // 터치: passive:false로 직접 등록
+    handle.addEventListener('touchstart', () => {
+      drag.active = true;
+      drag.fromIdx = index;
+      if (navigator.vibrate) navigator.vibrate(25);
+    }, { passive: true });
+
+    handle.addEventListener('touchmove', (e) => {
+      if (!drag.active) return;
+      e.preventDefault();
+      const t = getTarget(e.touches[0].clientY, drag.fromIdx);
+      if (t !== drag.fromIdx) { moveItem(drag.fromIdx, t); drag.fromIdx = t; }
+    }, { passive: false });
+
+    handle.addEventListener('touchend',    () => { drag.active = false; }, { passive: true });
+    handle.addEventListener('touchcancel', () => { drag.active = false; }, { passive: true });
+
+    // 마우스
+    handle.addEventListener('mousedown', (e) => {
+      e.preventDefault();
+      drag.active = true; drag.fromIdx = index;
+      const mm = (e) => {
+        if (!drag.active) return;
+        const t = getTarget(e.clientY, drag.fromIdx);
+        if (t !== drag.fromIdx) { moveItem(drag.fromIdx, t); drag.fromIdx = t; }
+      };
+      const mu = () => { drag.active = false; window.removeEventListener('mousemove', mm); window.removeEventListener('mouseup', mu); };
+      window.addEventListener('mousemove', mm);
+      window.addEventListener('mouseup', mu);
+    });
+
+    list.appendChild(card);
+  });
+  updateProgress();
+}
+
+function getTarget(clientY, fallback) {
+  const cards = document.querySelectorAll('[data-ci]');
+  let t = fallback;
+  cards.forEach(c => {
+    const r = c.getBoundingClientRect();
+    if (clientY >= r.top && clientY <= r.bottom) t = +c.dataset.ci;
+  });
+  return t;
+}
+
+function moveItem(from, to) {
+  const next = [...schedule];
+  const [m] = next.splice(from, 1);
+  next.splice(to, 0, m);
+  schedule = next;
+  render();
+}
+
+function toggleCheck(id) {
+  schedule = schedule.map(i => i.id===id ? {...i, checked:!i.checked} : i);
+  render();
+}
+
+function deleteItem(id) {
+  if (confirm('이 일정을 삭제할까요?')) {
+    schedule = schedule.filter(i => i.id !== id);
+    render();
+  }
+}
+
+function updateProgress() {
+  const done = schedule.filter(i => i.checked).length;
+  const total = schedule.length;
+  const pct = total ? Math.round(done/total*100) : 0;
+  document.getElementById('pFill').style.width = pct + '%';
+  document.getElementById('pText').textContent = done + '/' + total;
+}
+
+function togglePopup(key) {
+  const keys = ['restaurant','parade','fireworks'];
+  keys.forEach(k => {
+    document.getElementById('popup-'+k).style.display = (k===key && openPopup!==key) ? 'block' : 'none';
+  });
+  openPopup = openPopup===key ? null : key;
+}
+
+function showAdd() {
+  document.getElementById('addBtn').style.display = 'none';
+  document.getElementById('addForm').style.display = 'block';
+}
+function hideAdd() {
+  document.getElementById('addBtn').style.display = 'block';
+  document.getElementById('addForm').style.display = 'none';
+}
+function addItem() {
+  const time  = document.getElementById('nTime').value.trim();
+  const title = document.getElementById('nTitle').value.trim();
+  const emoji = document.getElementById('nEmoji').value.trim() || '⭐';
+  const sub   = document.getElementById('nSub').value.trim() || null;
+  if (!time || !title) { alert('시간과 이름을 입력해주세요!'); return; }
+  schedule.push({id:Date.now(), time, emoji, title, sub, tag:null, warn:null, num:null, checked:false});
+  document.getElementById('nTime').value = '';
+  document.getElementById('nTitle').value = '';
+  document.getElementById('nSub').value = '';
+  document.getElementById('nEmoji').value = '⭐';
+  hideAdd();
+  render();
+}
+
+render();
+loadWeather();
+
+// ── 날씨 (자동 로딩) ──────────────────
+async function loadWeather() {
+  try {
+    const url = 'https://api.open-meteo.com/v1/forecast?latitude=28.4177&longitude=-81.5812&current=temperature_2m,weathercode,windspeed_10m,relativehumidity_2m&temperature_unit=fahrenheit&windspeed_unit=mph&timezone=America/New_York';
+    const res = await fetch(url);
+    const data = await res.json();
+    const c = data.current;
+    document.getElementById('wiIcon').textContent = weatherIcon(c.weathercode);
+    document.getElementById('wiTemp').textContent = Math.round(c.temperature_2m) + '°F';
+    document.getElementById('wiDesc').textContent = weatherDesc(c.weathercode);
+  } catch(e) {
+    document.getElementById('wiIcon').textContent = '❓';
+    document.getElementById('wiDesc').textContent = '오프라인';
+  }
+}
+
+function weatherIcon(code) {
+  if (code === 0) return '☀️';
+  if (code <= 2) return '⛅';
+  if (code <= 3) return '☁️';
+  if (code <= 49) return '🌫';
+  if (code <= 59) return '🌦';
+  if (code <= 69) return '🌧';
+  if (code <= 79) return '❄️';
+  if (code <= 82) return '🌧';
+  if (code <= 84) return '🌨';
+  if (code <= 99) return '⛈';
+  return '🌤';
+}
+
+function weatherDesc(code) {
+  if (code === 0) return '맑음';
+  if (code <= 2) return '구름 조금';
+  if (code <= 3) return '흐림';
+  if (code <= 49) return '안개';
+  if (code <= 59) return '이슬비';
+  if (code <= 69) return '비';
+  if (code <= 79) return '눈';
+  if (code <= 82) return '소나기';
+  if (code <= 99) return '뇌우';
+  return '';
+}
+
+// ── 화장실 토글 ───────────────────────
+function toggleToilet() {
+  const el = document.getElementById('toiletList');
+  el.style.display = el.style.display === 'none' ? 'block' : 'none';
+}
+
+function toggleTitleEdit() {
+  const disp = document.getElementById('titleDisplay');
+  const edit = document.getElementById('titleEdit');
+  const isHidden = edit.style.display === 'none' || edit.style.display === '';
+  disp.style.display = isHidden ? 'none' : 'inline-flex';
+  edit.style.display = isHidden ? 'flex' : 'none';
+  if (isHidden) document.getElementById('titleInput').focus();
+}
+
+function saveTitle() {
+  const val = document.getElementById('titleInput').value.trim();
+  if (!val) return;
+  document.getElementById('titleTxt').textContent = val;
+  document.title = val;
+  toggleTitleEdit();
+}
+
+function toggleDateEdit() {
+  const disp = document.getElementById('dateDisplay');
+  const edit = document.getElementById('dateEdit');
+  const isHidden = edit.style.display === 'none' || edit.style.display === '';
+  disp.style.display = isHidden ? 'none' : 'inline-flex';
+  edit.style.display = isHidden ? 'flex' : 'none';
+}
+
+function saveDate() {
+  const val = document.getElementById('dateInput').value;
+  if (!val) return;
+  const d = new Date(val + 'T00:00:00');
+  const yyyy = d.getFullYear();
+  const mm = d.getMonth() + 1;
+  const dd = d.getDate();
+  document.getElementById('dateTxt').textContent = yyyy + '년 ' + mm + '월 ' + dd + '일';
+  toggleDateEdit();
+}
+</script>
+</body>
+</html>
