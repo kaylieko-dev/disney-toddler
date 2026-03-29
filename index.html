@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="매직킹덤">
+<title>매직킹덤 일정표</title>
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8IS0tIOuwsOqyvSAtLT4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjkwIiBmaWxsPSIjZTBmMmZlIi8+CgogIDwhLS0g7ZWY64qYIOq3uOudvOuNsOydtOyFmCAtLT4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ic2t5IiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNiYWU2ZmQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZTBmMmZlIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJjYXN0bGUiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y4ZmFmYyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMmVhZjQiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgoKICA8IS0tIOuzhCDsnqXsi50gLS0+CiAgPGNpcmNsZSBjeD0iOTAiIGN5PSI5MCIgcj0iOCIgZmlsbD0iI2ZkZTA0NyIgb3BhY2l0eT0iMC45Ii8+CiAgPGNpcmNsZSBjeD0iNDIwIiBjeT0iNzAiIHI9IjYiIGZpbGw9IiNmZGUwNDciIG9wYWNpdHk9IjAuOCIvPgogIDxjaXJjbGUgY3g9IjM3MCIgY3k9IjEyMCIgcj0iNCIgZmlsbD0iI2ZkZTA0NyIgb3BhY2l0eT0iMC43Ii8+CiAgPGNpcmNsZSBjeD0iMTMwIiBjeT0iMTQwIiByPSI0IiBmaWxsPSIjZmRlMDQ3IiBvcGFjaXR5PSIwLjYiLz4KCiAgPCEtLSDrtojqvYMgKOyEsSDsnIQpIC0tPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI5NSIgcng9IjE4IiByeT0iMjgiIGZpbGw9IiNmYmJmMjQiIG9wYWNpdHk9IjAuOSIvPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI4OCIgcng9IjEwIiByeT0iMTgiIGZpbGw9IiNmZWYwOGEiLz4KICA8ZWxsaXBzZSBjeD0iMjQwIiBjeT0iMTA4IiByeD0iMTAiIHJ5PSIxOCIgZmlsbD0iI2ZiOTIzYyIgb3BhY2l0eT0iMC44Ii8+CiAgPGVsbGlwc2UgY3g9IjI3MiIgY3k9IjEwOCIgcng9IjEwIiByeT0iMTgiIGZpbGw9IiNmYjkyM2MiIG9wYWNpdHk9IjAuOCIvPgoKICA8IS0tIOykkeyVmSDrqZTsnbgg7YOA7JuMIC0tPgogIDwhLS0g7LKo7YORIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iMjU2LDYwIDI0MiwxMzAgMjcwLDEzMCIgZmlsbD0iIzkzYzVmZCIvPgogIDxyZWN0IHg9IjI0MiIgeT0iMTMwIiB3aWR0aD0iMjgiIGhlaWdodD0iMTEwIiBmaWxsPSJ1cmwoI2Nhc3RsZSkiLz4KCiAgPCEtLSDsmbzsqr0g7J6R7J2AIO2DgOybjCAtLT4KICA8cG9seWdvbiBwb2ludHM9IjE3NSwxMjAgMTY0LDE3MCAxODYsMTcwIiBmaWxsPSIjOTNjNWZkIi8+CiAgPHJlY3QgeD0iMTY0IiB5PSIxNzAiIHdpZHRoPSIyMiIgaGVpZ2h0PSI4MCIgZmlsbD0idXJsKCNjYXN0bGUpIi8+CgogIDwhLS0g7Jik66W47Kq9IOyekeydgCDtg4Dsm4wgLS0+CiAgPHBvbHlnb24gcG9pbnRzPSIzMzcsMTIwIDMyNiwxNzAgMzQ4LDE3MCIgZmlsbD0iIzkzYzVmZCIvPgogIDxyZWN0IHg9IjMyNiIgeT0iMTcwIiB3aWR0aD0iMjIiIGhlaWdodD0iODAiIGZpbGw9InVybCgjY2FzdGxlKSIvPgoKICA8IS0tIOyZvOyqvSDsmbjqs70g7J6R7J2AIO2DgOybjCAtLT4KICA8cG9seWdvbiBwb2ludHM9IjEyMCwxNjAgMTEwLDIwMCAxMzAsMjAwIiBmaWxsPSIjYmFlNmZkIi8+CiAgPHJlY3QgeD0iMTEwIiB5PSIyMDAiIHdpZHRoPSIyMCIgaGVpZ2h0PSI2MCIgZmlsbD0idXJsKCNjYXN0bGUpIi8+CgogIDwhLS0g7Jik66W47Kq9IOyZuOqzvSDsnpHsnYAg7YOA7JuMIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iMzkyLDE2MCAzODIsMjAwIDQwMiwyMDAiIGZpbGw9IiNiYWU2ZmQiLz4KICA8cmVjdCB4PSIzODIiIHk9IjIwMCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjYwIiBmaWxsPSJ1cmwoI2Nhc3RsZSkiLz4KCiAgPCEtLSDshLHrsr0g7Jew6rKwIC0tPgogIDxyZWN0IHg9IjExMCIgeT0iMjQwIiB3aWR0aD0iMjkyIiBoZWlnaHQ9IjIwIiBmaWxsPSJ1cmwoI2Nhc3RsZSkiIHJ4PSIyIi8+CgogIDwhLS0g7ISxIOuzuOyytCAtLT4KICA8cmVjdCB4PSIxMzAiIHk9IjI1NSIgd2lkdGg9IjI1MiIgaGVpZ2h0PSIxNTAiIGZpbGw9InVybCgjY2FzdGxlKSIgcng9IjQiLz4KCiAgPCEtLSDshLHrrLgg7JWE7LmYIC0tPgogIDxwYXRoIGQ9Ik0yMjYsNDA1IEwyMjYsMzMwIFEyNTYsMzA1IDI4NiwzMzAgTDI4Niw0MDUgWiIgZmlsbD0iIzkzYzVmZCIgb3BhY2l0eT0iMC43Ii8+CgogIDwhLS0g7LC966y465OkIC0tPgogIDxyZWN0IHg9IjE2OCIgeT0iMjg1IiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgogIDxyZWN0IHg9IjIwNiIgeT0iMjg1IiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgogIDxyZWN0IHg9IjI4NiIgeT0iMjg1IiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgogIDxyZWN0IHg9IjMyNCIgeT0iMjg1IiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgoKICA8IS0tIOykkeyVmSDtg4Dsm4wg7LC966y4IC0tPgogIDxyZWN0IHg9IjI0NiIgeT0iMTUwIiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgogIDxyZWN0IHg9IjI0NiIgeT0iMTkyIiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgoKICA8IS0tIOyEsSDquLDri6ggLS0+CiAgPHJlY3QgeD0iMTEwIiB5PSI0MDAiIHdpZHRoPSIyOTIiIGhlaWdodD0iMjAiIGZpbGw9IiM5M2M1ZmQiIHJ4PSIzIiBvcGFjaXR5PSIwLjUiLz4KCiAgPCEtLSDrsJjsp53snbQg7J6l7IudIC0tPgogIDx0ZXh0IHg9Ijg4IiB5PSIyMDAiIGZvbnQtc2l6ZT0iMjgiIG9wYWNpdHk9IjAuOCI+4pymPC90ZXh0PgogIDx0ZXh0IHg9IjM5MCIgeT0iMTgwIiBmb250LXNpemU9IjIyIiBvcGFjaXR5PSIwLjciPuKcpjwvdGV4dD4KICA8dGV4dCB4PSIxNTAiIHk9IjExMCIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC42Ij7inKY8L3RleHQ+Cjwvc3ZnPg==">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8IS0tIOuwsOqyvSAtLT4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjkwIiBmaWxsPSIjZTBmMmZlIi8+CgogIDwhLS0g7ZWY64qYIOq3uOudvOuNsOydtOyFmCAtLT4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ic2t5IiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNiYWU2ZmQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZTBmMmZlIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJjYXN0bGUiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y4ZmFmYyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMmVhZjQiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgoKICA8IS0tIOuzhCDsnqXsi50gLS0+CiAgPGNpcmNsZSBjeD0iOTAiIGN5PSI5MCIgcj0iOCIgZmlsbD0iI2ZkZTA0NyIgb3BhY2l0eT0iMC45Ii8+CiAgPGNpcmNsZSBjeD0iNDIwIiBjeT0iNzAiIHI9IjYiIGZpbGw9IiNmZGUwNDciIG9wYWNpdHk9IjAuOCIvPgogIDxjaXJjbGUgY3g9IjM3MCIgY3k9IjEyMCIgcj0iNCIgZmlsbD0iI2ZkZTA0NyIgb3BhY2l0eT0iMC43Ii8+CiAgPGNpcmNsZSBjeD0iMTMwIiBjeT0iMTQwIiByPSI0IiBmaWxsPSIjZmRlMDQ3IiBvcGFjaXR5PSIwLjYiLz4KCiAgPCEtLSDrtojqvYMgKOyEsSDsnIQpIC0tPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI5NSIgcng9IjE4IiByeT0iMjgiIGZpbGw9IiNmYmJmMjQiIG9wYWNpdHk9IjAuOSIvPgogIDxlbGxpcHNlIGN4PSIyNTYiIGN5PSI4OCIgcng9IjEwIiByeT0iMTgiIGZpbGw9IiNmZWYwOGEiLz4KICA8ZWxsaXBzZSBjeD0iMjQwIiBjeT0iMTA4IiByeD0iMTAiIHJ5PSIxOCIgZmlsbD0iI2ZiOTIzYyIgb3BhY2l0eT0iMC44Ii8+CiAgPGVsbGlwc2UgY3g9IjI3MiIgY3k9IjEwOCIgcng9IjEwIiByeT0iMTgiIGZpbGw9IiNmYjkyM2MiIG9wYWNpdHk9IjAuOCIvPgoKICA8IS0tIOykkeyVmSDrqZTsnbgg7YOA7JuMIC0tPgogIDwhLS0g7LKo7YORIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iMjU2LDYwIDI0MiwxMzAgMjcwLDEzMCIgZmlsbD0iIzkzYzVmZCIvPgogIDxyZWN0IHg9IjI0MiIgeT0iMTMwIiB3aWR0aD0iMjgiIGhlaWdodD0iMTEwIiBmaWxsPSJ1cmwoI2Nhc3RsZSkiLz4KCiAgPCEtLSDsmbzsqr0g7J6R7J2AIO2DgOybjCAtLT4KICA8cG9seWdvbiBwb2ludHM9IjE3NSwxMjAgMTY0LDE3MCAxODYsMTcwIiBmaWxsPSIjOTNjNWZkIi8+CiAgPHJlY3QgeD0iMTY0IiB5PSIxNzAiIHdpZHRoPSIyMiIgaGVpZ2h0PSI4MCIgZmlsbD0idXJsKCNjYXN0bGUpIi8+CgogIDwhLS0g7Jik66W47Kq9IOyekeydgCDtg4Dsm4wgLS0+CiAgPHBvbHlnb24gcG9pbnRzPSIzMzcsMTIwIDMyNiwxNzAgMzQ4LDE3MCIgZmlsbD0iIzkzYzVmZCIvPgogIDxyZWN0IHg9IjMyNiIgeT0iMTcwIiB3aWR0aD0iMjIiIGhlaWdodD0iODAiIGZpbGw9InVybCgjY2FzdGxlKSIvPgoKICA8IS0tIOyZvOyqvSDsmbjqs70g7J6R7J2AIO2DgOybjCAtLT4KICA8cG9seWdvbiBwb2ludHM9IjEyMCwxNjAgMTEwLDIwMCAxMzAsMjAwIiBmaWxsPSIjYmFlNmZkIi8+CiAgPHJlY3QgeD0iMTEwIiB5PSIyMDAiIHdpZHRoPSIyMCIgaGVpZ2h0PSI2MCIgZmlsbD0idXJsKCNjYXN0bGUpIi8+CgogIDwhLS0g7Jik66W47Kq9IOyZuOqzvSDsnpHsnYAg7YOA7JuMIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iMzkyLDE2MCAzODIsMjAwIDQwMiwyMDAiIGZpbGw9IiNiYWU2ZmQiLz4KICA8cmVjdCB4PSIzODIiIHk9IjIwMCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjYwIiBmaWxsPSJ1cmwoI2Nhc3RsZSkiLz4KCiAgPCEtLSDshLHrsr0g7Jew6rKwIC0tPgogIDxyZWN0IHg9IjExMCIgeT0iMjQwIiB3aWR0aD0iMjkyIiBoZWlnaHQ9IjIwIiBmaWxsPSJ1cmwoI2Nhc3RsZSkiIHJ4PSIyIi8+CgogIDwhLS0g7ISxIOuzuOyytCAtLT4KICA8cmVjdCB4PSIxMzAiIHk9IjI1NSIgd2lkdGg9IjI1MiIgaGVpZ2h0PSIxNTAiIGZpbGw9InVybCgjY2FzdGxlKSIgcng9IjQiLz4KCiAgPCEtLSDshLHrrLgg7JWE7LmYIC0tPgogIDxwYXRoIGQ9Ik0yMjYsNDA1IEwyMjYsMzMwIFEyNTYsMzA1IDI4NiwzMzAgTDI4Niw0MDUgWiIgZmlsbD0iIzkzYzVmZCIgb3BhY2l0eT0iMC43Ii8+CgogIDwhLS0g7LC966y465OkIC0tPgogIDxyZWN0IHg9IjE2OCIgeT0iMjg1IiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgogIDxyZWN0IHg9IjIwNiIgeT0iMjg1IiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgogIDxyZWN0IHg9IjI4NiIgeT0iMjg1IiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgogIDxyZWN0IHg9IjMyNCIgeT0iMjg1IiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgoKICA8IS0tIOykkeyVmSDtg4Dsm4wg7LC966y4IC0tPgogIDxyZWN0IHg9IjI0NiIgeT0iMTUwIiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgogIDxyZWN0IHg9IjI0NiIgeT0iMTkyIiB3aWR0aD0iMjAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iI2JhZTZmZCIvPgoKICA8IS0tIOyEsSDquLDri6ggLS0+CiAgPHJlY3QgeD0iMTEwIiB5PSI0MDAiIHdpZHRoPSIyOTIiIGhlaWdodD0iMjAiIGZpbGw9IiM5M2M1ZmQiIHJ4PSIzIiBvcGFjaXR5PSIwLjUiLz4KCiAgPCEtLSDrsJjsp53snbQg7J6l7IudIC0tPgogIDx0ZXh0IHg9Ijg4IiB5PSIyMDAiIGZvbnQtc2l6ZT0iMjgiIG9wYWNpdHk9IjAuOCI+4pymPC90ZXh0PgogIDx0ZXh0IHg9IjM5MCIgeT0iMTgwIiBmb250LXNpemU9IjIyIiBvcGFjaXR5PSIwLjciPuKcpjwvdGV4dD4KICA8dGV4dCB4PSIxNTAiIHk9IjExMCIgZm9udC1zaXplPSIxNiIgb3BhY2l0eT0iMC42Ij7inKY8L3RleHQ+Cjwvc3ZnPg==">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{font-family:'Noto Sans KR',sans-serif;background:#f7fbff;padding-bottom:60px}
+input,textarea,button{font-family:'Noto Sans KR',sans-serif}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+#app{max-width:480px;margin:0 auto}
+
+/* Header */
+.header{background:#fff;border-bottom:2px solid #e3eef9;padding:16px 16px 14px}
+.header-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.h1{font-size:19px;font-weight:700;color:#1a2a3a;letter-spacing:-0.3px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
+.weather-chip{display:flex;align-items:center;gap:5px;background:linear-gradient(135deg,#e0f2fe,#bae6fd);border-radius:10px;padding:6px 10px}
+.weather-chip .wi{font-size:18px;line-height:1}
+.weather-chip .wt{font-size:13px;font-weight:700;color:#1e3a5f}
+.weather-chip .wd{font-size:10px;color:#5b9bd5}
+.date-row{font-size:12px;color:#7a9ab8;margin-bottom:10px;cursor:pointer;display:inline-flex;align-items:center;gap:4px}
+.progress-row{display:flex;align-items:center;gap:10px}
+.progress-bar{flex:1;height:6px;background:#e3eef9;border-radius:99px;overflow:hidden}
+.progress-fill{height:100%;background:linear-gradient(90deg,#f9d94e,#5b9bd5);border-radius:99px;transition:width .4s ease}
+.progress-text{font-size:12px;font-weight:700;color:#5b9bd5;min-width:32px;text-align:right}
+
+/* Info buttons */
+.info-row{display:flex;gap:8px;padding:10px 16px 4px}
+.info-btn{flex:1;padding:9px 4px;border:none;border-radius:12px;font-size:11px;font-weight:700;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.07)}
+
+/* Popup */
+.popup{margin:6px 0;border-radius:12px;border:1.5px solid;overflow:hidden;animation:fadeIn .2s ease;box-shadow:0 1px 8px rgba(0,0,0,.06)}
+.popup-head{padding:11px 14px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(0,0,0,.06)}
+.popup-title{font-size:14px;font-weight:700;color:#1a2a3a}
+.popup-close{background:none;border:none;font-size:18px;cursor:pointer;color:#aaa;padding:2px 6px}
+.popup-item{display:flex;gap:12px;padding:10px 14px;align-items:flex-start;border-top:1px solid #f3f4f6}
+.popup-name{font-size:13px;font-weight:700;color:#1a2a3a;margin-bottom:2px}
+.popup-desc{font-size:11px;color:#5a7a9a;line-height:1.5}
+.menu-row{display:flex;gap:4px;flex-wrap:wrap;margin-top:4px}
+.menu-tag{background:#f0f9ff;border-radius:6px;padding:2px 7px;font-size:10px;color:#1e3a5f;font-weight:700}
+.menu-price{background:#fefce8;border-radius:6px;padding:2px 7px;font-size:10px;color:#854d0e;font-weight:700}
+.res-link{display:inline-block;margin-top:5px;font-size:11px;color:#5b9bd5;font-weight:700;text-decoration:none}
+
+/* Cards */
+.list{padding:8px 16px;display:flex;flex-direction:column;gap:7px}
+.card{display:flex;align-items:center;gap:8px;background:#fff;border-radius:12px;padding:10px 11px;box-shadow:0 1px 4px rgba(0,0,0,.06);transition:opacity .3s}
+.card.checked{opacity:.4}
+.handle{color:#c5d8ee;font-size:20px;user-select:none;flex-shrink:0;touch-action:none;padding:5px 3px;cursor:grab;line-height:1}
+.cb{width:23px;height:23px;border-radius:6px;border:1.5px solid #c5d8ee;cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .2s;background:#fff;font-size:13px;font-weight:700;color:#fff}
+.cb.on{background:#5b9bd5;border-color:#5b9bd5}
+.card-time{font-size:11px;font-weight:700;color:#5b9bd5;min-width:38px;flex-shrink:0}
+.card-body{flex:1;min-width:0}
+.title-row{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.card-title{font-size:13px;font-weight:700;color:#1a2a3a}
+.card-title.done{text-decoration:line-through;color:#aaa}
+.card-sub{font-size:11px;color:#8aaabf;margin-top:1px}
+.warn-box{margin-top:3px;background:#fff8e1;border:1px solid #ffe082;border-radius:6px;padding:2px 7px;font-size:10px;color:#b45309;font-weight:700}
+.ll-tag{background:#5b9bd5;color:#fff;font-size:9px;font-weight:700;border-radius:5px;padding:1px 5px;flex-shrink:0}
+.num-badge{background:#fffde7;color:#92660a;font-size:9px;font-weight:700;border-radius:99px;padding:1px 6px;border:1px solid #f9e05a;flex-shrink:0}
+.wait-badge{font-size:9px;font-weight:700;border-radius:99px;padding:1px 6px;flex-shrink:0}
+.del-btn{background:none;border:none;font-size:15px;color:#c5d8ee;cursor:pointer;padding:2px 3px;flex-shrink:0}
+
+/* 지출 위젯 */
+.expense-box{margin:10px 16px 0;background:#fff;border-radius:12px;padding:12px 14px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.expense-title{font-size:12px;font-weight:700;color:#5b9bd5;margin-bottom:8px}
+.expense-total{font-size:22px;font-weight:700;color:#1a2a3a;margin-bottom:8px}
+.expense-list{display:flex;flex-direction:column;gap:4px;max-height:160px;overflow-y:auto;margin-bottom:8px}
+.expense-item{display:flex;justify-content:space-between;align-items:center;background:#f7fbff;border-radius:8px;padding:6px 10px}
+.expense-item-name{font-size:12px;color:#1a2a3a}
+.expense-item-amt{font-size:12px;font-weight:700;color:#5b9bd5}
+.expense-del{background:none;border:none;color:#c5d8ee;font-size:14px;cursor:pointer;padding:0 2px}
+.expense-add-row{display:flex;gap:5px;width:100%}
+.expense-inp{flex:2;min-width:0;padding:7px 8px;border-radius:8px;border:1.5px solid #e3eef9;font-size:12px;outline:none;background:#f7fbff;color:#1a2a3a}
+.expense-inp-amt{flex:1;min-width:0}
+.expense-btn{flex:0 0 46px;padding:7px 0;background:linear-gradient(135deg,#93c5fd,#60a5fa);color:#fff;border:none;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap}
+
+/* 바로가기 */
+.quick-box{margin:10px 16px 0;background:#fff;border-radius:12px;padding:12px 14px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.quick-title{font-size:12px;font-weight:700;color:#5b9bd5;margin-bottom:8px}
+.quick-row{display:flex;gap:8px}
+.quick-btn{flex:1;padding:11px 6px;border:none;border-radius:10px;font-size:11px;font-weight:700;cursor:pointer;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:4px}
+
+/* 혼잡도 */
+.wait-section{margin:10px 16px 0;background:#fff;border-radius:12px;padding:12px 14px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.wait-title-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.wait-title{font-size:12px;font-weight:700;color:#5b9bd5}
+.wait-refresh{background:none;border:none;color:#5b9bd5;font-size:12px;cursor:pointer;padding:2px 6px;border-radius:6px;background:#f0f9ff}
+.wait-list{display:flex;flex-direction:column;gap:5px}
+.wait-item{display:flex;justify-content:space-between;align-items:center;padding:7px 10px;background:#f7fbff;border-radius:8px}
+.wait-name{font-size:12px;color:#1a2a3a;font-weight:700}
+.wait-min{font-size:11px;font-weight:700;border-radius:99px;padding:2px 8px}
+
+/* Stroller */
+.stroller{margin:10px 16px 0;background:#fff;border:1.5px solid #e3eef9;border-radius:12px;padding:12px 14px}
+.stroller-title{font-size:12px;font-weight:700;color:#5b9bd5;margin-bottom:6px}
+.stroller-ta{width:100%;border-radius:8px;border:1.5px solid #ddeaf5;padding:9px 11px;font-size:12px;color:#1a2a3a;resize:none;outline:none;background:#f7fbff;line-height:1.5}
+
+/* Add */
+.add-btn{display:block;margin:8px 16px 0;width:calc(100% - 32px);padding:11px;background:linear-gradient(135deg,#e0f2fe,#bae6fd);border:none;border-radius:12px;font-size:13px;font-weight:700;color:#1e3a5f;cursor:pointer}
+.add-form{margin:6px 16px 0;background:#fff;border-radius:12px;padding:14px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.inp{padding:8px 10px;border-radius:9px;border:1.5px solid #e8f0f7;font-size:13px;outline:none;background:#f7fbff;color:#1a2a3a;width:100%;margin-bottom:7px}
+.add-ok{flex:1;padding:9px;background:linear-gradient(135deg,#93c5fd,#60a5fa);color:#fff;border:none;border-radius:9px;font-size:13px;font-weight:700;cursor:pointer}
+.add-cancel{flex:1;padding:9px;background:linear-gradient(135deg,#f1f5f9,#e2e8f0);color:#7a9ab8;border:none;border-radius:9px;font-size:13px;cursor:pointer}
+.footer{text-align:center;padding:20px 16px 0;color:#90c0e8;font-size:11px}
+</style>
+</head>
+<body>
+<div id="app">
+
+<!-- Header -->
+<div class="header">
+  <div class="header-top">
+    <div id="titleDisplay" class="h1" onclick="toggleTitleEdit()">
+      <span id="titleTxt">매직킹덤 일정표</span>
+      <span style="font-size:11px;color:#b0c8e0;font-weight:400">✏️</span>
+    </div>
+    <div class="weather-chip">
+      <span class="wi" id="wiIcon">🌤</span>
+      <div>
+        <div class="wt" id="wiTemp">--°F</div>
+        <div class="wd" id="wiDesc">로딩중</div>
+      </div>
+    </div>
+  </div>
+  <div id="titleEdit" style="display:none;align-items:center;gap:6px;margin-bottom:8px">
+    <input id="titleInput" value="매직킹덤 일정표" class="inp" style="margin:0;flex:1">
+    <button onclick="saveTitle()" style="padding:7px 12px;background:linear-gradient(135deg,#93c5fd,#60a5fa);color:#fff;border:none;border-radius:9px;font-size:12px;font-weight:700;cursor:pointer">확인</button>
+  </div>
+  <div id="dateDisplay" class="date-row" onclick="toggleDateEdit()">
+    <span id="dateTxt">2026년 4월 4일</span>
+    <span style="font-size:10px;color:#b0c8e0">✏️</span>
+  </div>
+  <div id="dateEdit" style="display:none;align-items:center;gap:6px;margin-bottom:8px">
+    <input type="date" id="dateInput" value="2026-04-04" class="inp" style="margin:0;flex:1">
+    <button onclick="saveDate()" style="padding:7px 12px;background:linear-gradient(135deg,#93c5fd,#60a5fa);color:#fff;border:none;border-radius:9px;font-size:12px;font-weight:700;cursor:pointer">확인</button>
+  </div>
+  <div class="progress-row">
+    <div class="progress-bar"><div class="progress-fill" id="pFill" style="width:0%"></div></div>
+    <span class="progress-text" id="pText">0/11</span>
+  </div>
+</div>
+
+<!-- Info buttons -->
+
+
+<!-- Popups -->
+
+
+
+
+
+
+<!-- 놀이기구 혼잡도 -->
+<div class="wait-section">
+  <div class="wait-title-row">
+    <span class="wait-title">⏱ 실시간 대기시간</span>
+    <button class="wait-refresh" onclick="loadWaitTimes()">↻ 새로고침</button>
+  </div>
+  <div class="wait-list" id="waitList">
+    <div style="font-size:12px;color:#aaa;text-align:center;padding:8px">불러오는 중...</div>
+  </div>
+</div>
+
+<!-- 일정 -->
+<div class="list" id="cardList"></div>
+
+<!-- Add -->
+<button class="add-btn" id="addBtn" onclick="showAdd()">＋ 일정 추가</button>
+<div class="add-form" id="addForm" style="display:none">
+  <div style="font-size:13px;font-weight:700;color:#1a2a3a;margin-bottom:9px">새 일정 추가</div>
+  <div style="display:flex;gap:7px;margin-bottom:7px">
+    <input class="inp" id="nEmoji" placeholder="😊" maxlength="2" value="⭐" style="width:48px;text-align:center;margin:0">
+    <input class="inp" id="nTime" placeholder="시간 (예: 13:00)" style="flex:1;margin:0">
+  </div>
+  <input class="inp" id="nTitle" placeholder="일정 이름">
+  <input class="inp" id="nSub" placeholder="메모 (선택)">
+  <div style="display:flex;gap:7px">
+    <button class="add-ok" onclick="addItem()">추가</button>
+    <button class="add-cancel" onclick="hideAdd()">취소</button>
+  </div>
+</div>
+
+<!-- 지출 기록 -->
+<div class="expense-box">
+  <div class="expense-title">💰 오늘 지출</div>
+  <div class="expense-total" id="expTotal">$0.00</div>
+  <div class="expense-list" id="expList"></div>
+  <div class="expense-add-row">
+    <input class="expense-inp expense-inp-name" id="expName" placeholder="항목 입력">
+    <input class="expense-inp expense-inp-amt" id="expAmt" placeholder="$0" type="number" step="0.01">
+    <button class="expense-btn" onclick="addExpense()">추가</button>
+  </div>
+</div>
+
+<!-- 현장 바로가기 -->
+<div class="quick-box">
+  <div class="quick-title">현장 바로가기</div>
+
+  <!-- 버튼 3개 -->
+  <div class="quick-row" style="margin-bottom:8px">
+    <button class="info-btn" style="background:linear-gradient(135deg,#fef08a,#fde047);color:#854d0e" onclick="togglePopup('restaurant')">식당</button>
+    <button class="info-btn" style="background:linear-gradient(135deg,#bae6fd,#93c5fd);color:#1e3a5f" onclick="togglePopup('parade')">퍼레이드 명당</button>
+    <button class="info-btn" style="background:linear-gradient(135deg,#bbf7d0,#86efac);color:#14532d" onclick="togglePopup('fireworks')">불꽃놀이 명당</button>
+  </div>
+
+  <!-- 팝업: 식당 -->
+  <div id="popup-restaurant" class="popup" style="display:none;border-color:#f9e05a;background:#fffde7">
+    <div class="popup-head">
+      <span class="popup-title">🍴 추천 식당</span>
+      <button class="popup-close" onclick="togglePopup('restaurant')">✕</button>
+    </div>
+    <div class="popup-item">
+      <span style="font-size:22px;flex-shrink:0">🍝</span>
+      <div>
+        <div class="popup-name">피노키오 빌리지 하우스</div>
+        <div class="popup-desc">스몰월드 배가 보이는 창가석 강추! 예약 필수.</div>
+        <div class="menu-row">
+          <span class="menu-tag">🏆 피노키오 스파게티</span><span class="menu-price">$16.99</span>
+          <span class="menu-tag">미트볼 파스타</span><span class="menu-price">$15.49</span>
+          <span class="menu-tag">치즈피자</span><span class="menu-price">$12.99</span>
+        </div>
+        <a href="https://disneyworld.disney.go.com/dining/magic-kingdom/pinocchio-village-haus/" target="_blank" class="res-link">📅 예약하기 →</a>
+      </div>
+    </div>
+    <div class="popup-item">
+      <span style="font-size:22px;flex-shrink:0">🤖</span>
+      <div>
+        <div class="popup-name">코스믹 레이 카페</div>
+        <div class="popup-desc">노래하는 로봇 쇼! 예약 없이 입장 가능.</div>
+        <div class="menu-row">
+          <span class="menu-tag">🏆 치킨 버거</span><span class="menu-price">$14.49</span>
+          <span class="menu-tag">핫도그</span><span class="menu-price">$10.99</span>
+          <span class="menu-tag">맥앤치즈</span><span class="menu-price">$9.49</span>
+        </div>
+        <span class="res-link" style="color:#9ca3af">예약 불필요 (카운터 서비스)</span>
+      </div>
+    </div>
+    <div class="popup-item">
+      <span style="font-size:22px;flex-shrink:0">🥐</span>
+      <div>
+        <div class="popup-name">가스통 타번</div>
+        <div class="popup-desc">판타지랜드, 벨 체험 근처! 시나몬 롤 유명.</div>
+        <div class="menu-row">
+          <span class="menu-tag">🏆 가스통 시나몬 롤</span><span class="menu-price">$6.99</span>
+          <span class="menu-tag">BBQ 포크 샌드위치</span><span class="menu-price">$14.99</span>
+          <span class="menu-tag">에이드</span><span class="menu-price">$4.49</span>
+        </div>
+        <span class="res-link" style="color:#9ca3af">예약 불필요 (카운터 서비스)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 팝업: 퍼레이드 -->
+  <div id="popup-parade" class="popup" style="display:none;border-color:#90caf9;background:#e3f2fd">
+    <div class="popup-head">
+      <span class="popup-title">💃 퍼레이드 명당</span>
+      <button class="popup-close" onclick="togglePopup('parade')">✕</button>
+    </div>
+    <div class="popup-item">
+      <span style="font-size:22px;flex-shrink:0">📍</span>
+      <div>
+        <div class="popup-name">리버티 스퀘어 근처</div>
+        <div class="popup-desc">메인 스트리트보다 훨씬 한산해요! 유모차 배치 수월. 시작 20분 전 자리 잡으세요.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 팝업: 불꽃 -->
+  <div id="popup-fireworks" class="popup" style="display:none;border-color:#a5d6a7;background:#e8f5e9">
+    <div class="popup-head">
+      <span class="popup-title">✨ 불꽃놀이 명당</span>
+      <button class="popup-close" onclick="togglePopup('fireworks')">✕</button>
+    </div>
+    <div class="popup-item">
+      <span style="font-size:22px;flex-shrink:0">🎇</span>
+      <div>
+        <div class="popup-name">케이시스 코너 근처</div>
+        <div class="popup-desc">성 전체 쇼가 한눈에! 97cm 아이는 성 바로 앞에선 등에 가릴 수 있어요. 퇴장도 빠릅니다.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 지도 버튼 -->
+  <div class="quick-row" style="margin-top:8px">
+    <a class="quick-btn" style="background:linear-gradient(135deg,#e2e8f0,#f1f5f9);color:#374151"
+      href="https://maps.apple.com/?q=Magic+Kingdom+Restrooms&ll=28.4177,-81.5812" target="_blank">화장실 지도</a>
+    <a class="quick-btn" style="background:linear-gradient(135deg,#e2e8f0,#f1f5f9);color:#374151"
+      href="https://disneyworld.disney.go.com/maps/magic-kingdom/" target="_blank">공원 지도</a>
+  </div>
+</div>
+
+<!-- 유모차 메모 -->
+<div class="stroller">
+  <div class="stroller-title">🛒 유모차 주차 메모</div>
+  <textarea class="stroller-ta" rows="2" placeholder="예: 피터팬 입구 왼쪽 기둥 옆 🌿"></textarea>
+</div>
+
+<div class="footer">🐇 불가능한 건 없어요, 그저 아직 안 해본 것뿐!</div>
+</div>
+
+<script>
+let schedule = [
+  {id:1,  time:"08:10", emoji:"🚕", title:"리프트 미니밴 호출",        sub:"카시트 확인!",              tag:null, warn:null, num:null, checked:false},
+  {id:2,  time:"09:30", emoji:"🐘", title:"덤보",                     sub:"현장 대기",                 tag:null, warn:null, num:8,    checked:false},
+  {id:3,  time:"10:15", emoji:"🍯", title:"위니 더 푸",                sub:"현장 대기",                 tag:"LL", warn:"스캔 직후 버즈 16:30 예약!", num:2, checked:false},
+  {id:4,  time:"11:00", emoji:"🧚", title:"피터팬의 비행",              sub:"현장 대기",                 tag:"LL", warn:"스캔 직후 스몰월드 17:15 예약!", num:1, checked:false},
+  {id:5,  time:"12:00", emoji:"🍴", title:"점심 식사",                 sub:"피노키오 빌리지 하우스",      tag:null, warn:null, num:null, checked:false},
+  {id:6,  time:"13:15", emoji:"🧜", title:"인어공주",                  sub:"현장 대기",                 tag:null, warn:null, num:3,    checked:false},
+  {id:7,  time:"14:00", emoji:"🌹", title:"벨 체험",                   sub:"가스통 시나몬 롤 간식",      tag:"LL", warn:null, num:6,    checked:false},
+  {id:8,  time:"15:00", emoji:"💃", title:"메인 퍼레이드 관람",          sub:"명당 확인!",               tag:null, warn:null, num:null, checked:false},
+  {id:9,  time:"16:30", emoji:"🔫", title:"버즈 라이트이어",            sub:null,                      tag:"LL", warn:null, num:4,    checked:false},
+  {id:10, time:"17:15", emoji:"🎈", title:"이츠 어 스몰 월드",          sub:null,                      tag:"LL", warn:null, num:5,    checked:false},
+  {id:11, time:"20:00", emoji:"✨", title:"Happily Ever After 불꽃놀이", sub:"명당 확인!",              tag:null, warn:null, num:null, checked:false},
+];
+
+// 놀이기구 ID (queue-times.com API)
+const RIDES = [
+  {name:"피터팬의 비행", match:"peter pan"},
+  {name:"위니 더 푸",    match:"winnie"},
+  {name:"덤보",          match:"dumbo"},
+  {name:"인어공주",      match:"little mermaid"},
+  {name:"버즈 라이트이어", match:"buzz"},
+  {name:"이츠 어 스몰 월드", match:"small world"},
+];
+
+let expenses = [];
+let openPopup = null;
+
+// ── 날씨 ─────────────────────────────────
+async function loadWeather() {
+  try {
+    const url = 'https://api.open-meteo.com/v1/forecast?latitude=28.4177&longitude=-81.5812&current=temperature_2m,weathercode,windspeed_10m,relativehumidity_2m&temperature_unit=fahrenheit&windspeed_unit=mph&timezone=America/New_York';
+    const res = await fetch(url);
+    const data = await res.json();
+    const c = data.current;
+    document.getElementById('wiIcon').textContent = weatherIcon(c.weathercode);
+    document.getElementById('wiTemp').textContent = Math.round(c.temperature_2m) + '°F';
+    document.getElementById('wiDesc').textContent = weatherDesc(c.weathercode);
+  } catch(e) {
+    document.getElementById('wiIcon').textContent = '❓';
+    document.getElementById('wiDesc').textContent = '오프라인';
+  }
+}
+function weatherIcon(c) {
+  if(c===0) return '☀️'; if(c<=2) return '⛅'; if(c<=3) return '☁️';
+  if(c<=49) return '🌫'; if(c<=59) return '🌦'; if(c<=69) return '🌧';
+  if(c<=79) return '❄️'; if(c<=82) return '🌧'; if(c<=99) return '⛈'; return '🌤';
+}
+function weatherDesc(c) {
+  if(c===0) return '맑음'; if(c<=2) return '구름 조금'; if(c<=3) return '흐림';
+  if(c<=49) return '안개'; if(c<=59) return '이슬비'; if(c<=69) return '비';
+  if(c<=79) return '눈'; if(c<=82) return '소나기'; if(c<=99) return '뇌우'; return '';
+}
+
+// ── 대기시간 ──────────────────────────────
+async function loadWaitTimes() {
+  const el = document.getElementById('waitList');
+  el.innerHTML = '<div style="font-size:12px;color:#aaa;text-align:center;padding:8px">불러오는 중...</div>';
+  try {
+    // CORS 프록시를 통해 themeparks.wiki 호출
+    const url = 'https://api.themeparks.wiki/v1/entity/75ea578a-adc8-4116-a54d-dccb60765ef9/live';
+    const proxy = 'https://corsproxy.io/?' + encodeURIComponent(url);
+    const res = await fetch(proxy);
+    if (!res.ok) throw new Error('API error ' + res.status);
+    const data = await res.json();
+    const liveMap = {};
+    if (data.liveData) {
+      data.liveData.forEach(r => { liveMap[r.name.toLowerCase()] = r; });
+    }
+    el.innerHTML = '';
+    RIDES.forEach(r => {
+      const key = Object.keys(liveMap).find(k => k.includes(r.match));
+      const entry = key ? liveMap[key] : null;
+      const wait = entry && entry.queue && entry.queue.STANDBY ? entry.queue.STANDBY.waitTime : null;
+      const open = entry ? entry.status === 'OPERATING' : false;
+      let color, bg, label;
+      if (!entry || !open) { color='#9ca3af'; bg='#f3f4f6'; label='정보없음'; }
+      else if (wait === null) { color='#16a34a'; bg='#dcfce7'; label='대기없음'; }
+      else if (wait <= 15) { color='#16a34a'; bg='#dcfce7'; label=wait+'분'; }
+      else if (wait <= 35) { color='#d97706'; bg='#fef3c7'; label=wait+'분'; }
+      else { color='#dc2626'; bg='#fee2e2'; label=wait+'분'; }
+      el.innerHTML += `<div class="wait-item">
+        <span class="wait-name">${r.name}</span>
+        <span class="wait-min" style="color:${color};background:${bg}">${label}</span>
+      </div>`;
+    });
+  } catch(e) {
+    el.innerHTML = '<div style="font-size:11px;color:#e57373;text-align:center;padding:8px">⚠️ 불러오기 실패<br><span style="color:#aaa">현장에서 Disney앱을 확인하세요</span></div>';
+  }
+}
+
+// ── 지출 ──────────────────────────────────
+function addExpense() {
+  const name = document.getElementById('expName').value.trim();
+  const amt  = parseFloat(document.getElementById('expAmt').value);
+  if (!name || isNaN(amt) || amt <= 0) return;
+  expenses.push({id: Date.now(), name, amt});
+  document.getElementById('expName').value = '';
+  document.getElementById('expAmt').value  = '';
+  renderExpenses();
+}
+function delExpense(id) {
+  expenses = expenses.filter(e => e.id !== id);
+  renderExpenses();
+}
+function renderExpenses() {
+  const total = expenses.reduce((s,e) => s+e.amt, 0);
+  document.getElementById('expTotal').textContent = '$' + total.toFixed(2);
+  const el = document.getElementById('expList');
+  el.innerHTML = expenses.map(e => `
+    <div class="expense-item">
+      <span class="expense-item-name">${e.name}</span>
+      <div style="display:flex;align-items:center;gap:6px">
+        <span class="expense-item-amt">$${e.amt.toFixed(2)}</span>
+        <button class="expense-del" onclick="delExpense(${e.id})">✕</button>
+      </div>
+    </div>`).join('');
+}
+
+// ── 일정 드래그 ──────────────────────────
+function render() {
+  const list = document.getElementById('cardList');
+  list.innerHTML = '';
+  schedule.forEach((item, index) => {
+    const card = document.createElement('div');
+    card.className = 'card' + (item.checked ? ' checked' : '');
+    card.dataset.ci = index;
+    card.style.borderLeft = item.tag ? '3px solid #5b9bd5' : '3px solid #f9d94e';
+    card.innerHTML = `
+      <span class="handle">⠿</span>
+      <button class="cb ${item.checked?'on':''}" onclick="toggleCheck(${item.id})">${item.checked?'✓':''}</button>
+      <span class="card-time">${item.time}</span>
+      <span style="font-size:18px;flex-shrink:0">${item.emoji}</span>
+      <div class="card-body">
+        <div class="title-row">
+          ${item.tag ? '<span class="ll-tag">LL</span>' : ''}
+          ${item.num ? `<span class="num-badge">${item.num}</span>` : ''}
+          <span class="card-title${item.checked?' done':''}">${item.title}</span>
+        </div>
+        ${item.sub ? `<div class="card-sub">${item.sub}</div>` : ''}
+        ${item.warn ? `<div class="warn-box">⚠️ ${item.warn}</div>` : ''}
+      </div>
+      <button class="del-btn" onclick="deleteItem(${item.id})">✕</button>`;
+    const handle = card.querySelector('.handle');
+    const drag = {active:false, fromIdx:null};
+    handle.addEventListener('touchstart', () => { drag.active=true; drag.fromIdx=index; if(navigator.vibrate) navigator.vibrate(25); }, {passive:true});
+    handle.addEventListener('touchmove', (e) => {
+      if(!drag.active) return; e.preventDefault();
+      const t = getTarget(e.touches[0].clientY, drag.fromIdx);
+      if(t !== drag.fromIdx) { moveItem(drag.fromIdx, t); drag.fromIdx=t; }
+    }, {passive:false});
+    handle.addEventListener('touchend', () => { drag.active=false; }, {passive:true});
+    handle.addEventListener('mousedown', (e) => {
+      e.preventDefault(); drag.active=true; drag.fromIdx=index;
+      const mm = (e) => { if(!drag.active) return; const t=getTarget(e.clientY,drag.fromIdx); if(t!==drag.fromIdx){moveItem(drag.fromIdx,t);drag.fromIdx=t;} };
+      const mu = () => { drag.active=false; window.removeEventListener('mousemove',mm); window.removeEventListener('mouseup',mu); };
+      window.addEventListener('mousemove',mm); window.addEventListener('mouseup',mu);
+    });
+    list.appendChild(card);
+  });
+  updateProgress();
+}
+function getTarget(clientY, fallback) {
+  const cards = document.querySelectorAll('[data-ci]');
+  let t = fallback;
+  cards.forEach(c => { const r=c.getBoundingClientRect(); if(clientY>=r.top&&clientY<=r.bottom) t=+c.dataset.ci; });
+  return t;
+}
+function moveItem(from, to) {
+  const next=[...schedule]; const [m]=next.splice(from,1); next.splice(to,0,m); schedule=next; render();
+}
+function toggleCheck(id) { schedule=schedule.map(i=>i.id===id?{...i,checked:!i.checked}:i); render(); }
+function deleteItem(id) { if(confirm('삭제할까요?')) { schedule=schedule.filter(i=>i.id!==id); render(); } }
+function updateProgress() {
+  const done=schedule.filter(i=>i.checked).length; const total=schedule.length;
+  const pct=total?Math.round(done/total*100):0;
+  document.getElementById('pFill').style.width=pct+'%';
+  document.getElementById('pText').textContent=done+'/'+total;
+}
+function togglePopup(key) {
+  const keys=['restaurant','parade','fireworks'];
+  keys.forEach(k => { document.getElementById('popup-'+k).style.display=(k===key&&openPopup!==key)?'block':'none'; });
+  openPopup=openPopup===key?null:key;
+}
+function showAdd() { document.getElementById('addBtn').style.display='none'; document.getElementById('addForm').style.display='block'; }
+function hideAdd() { document.getElementById('addBtn').style.display='block'; document.getElementById('addForm').style.display='none'; }
+function addItem() {
+  const time=document.getElementById('nTime').value.trim();
+  const title=document.getElementById('nTitle').value.trim();
+  const emoji=document.getElementById('nEmoji').value.trim()||'⭐';
+  const sub=document.getElementById('nSub').value.trim()||null;
+  if(!time||!title){alert('시간과 이름을 입력해주세요!');return;}
+  schedule.push({id:Date.now(),time,emoji,title,sub,tag:null,warn:null,num:null,checked:false});
+  document.getElementById('nTime').value=''; document.getElementById('nTitle').value='';
+  document.getElementById('nSub').value=''; document.getElementById('nEmoji').value='⭐';
+  hideAdd(); render();
+}
+function toggleTitleEdit() {
+  const d=document.getElementById('titleDisplay'), e=document.getElementById('titleEdit');
+  const h=e.style.display==='none'||e.style.display==='';
+  d.style.display=h?'none':'inline-flex'; e.style.display=h?'flex':'none';
+  if(h) document.getElementById('titleInput').focus();
+}
+function saveTitle() {
+  const v=document.getElementById('titleInput').value.trim();
+  if(!v) return;
+  document.getElementById('titleTxt').textContent=v; document.title=v; toggleTitleEdit();
+}
+function toggleDateEdit() {
+  const d=document.getElementById('dateDisplay'), e=document.getElementById('dateEdit');
+  const h=e.style.display==='none'||e.style.display==='';
+  d.style.display=h?'none':'inline-flex'; e.style.display=h?'flex':'none';
+}
+function saveDate() {
+  const v=document.getElementById('dateInput').value; if(!v) return;
+  const d=new Date(v+'T00:00:00');
+  document.getElementById('dateTxt').textContent=d.getFullYear()+'년 '+(d.getMonth()+1)+'월 '+d.getDate()+'일';
+  toggleDateEdit();
+}
+
+render();
+loadWeather();
+loadWaitTimes();
+// 5분마다 대기시간 자동 갱신
+setInterval(loadWaitTimes, 5 * 60 * 1000);
+</script>
+</body>
+</html>
